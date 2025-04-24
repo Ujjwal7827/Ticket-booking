@@ -14,12 +14,11 @@ const Footer = () => {
         <a href='https://youtube.com' className='mx-2'>YouTube</a>
         <a href='https://pinterest.com' className='mx-2'>Pinterest</a>
         <a href='https://snapchat.com' className='mx-2'>Snapchat</a>
-        <a href='https://tiktok.com' className='mx-2'>TikTok</a>
         <a href='https://whatsapp.com' className='mx-2'>WhatsApp</a>
         <a href='https://telegram.org' className='mx-2'>Telegram</a>
-        <a href='https://reddit.com' className='mx-2'>Reddit</a>
         
         <p>© 2023 Your Company. All rights reserved.</p>
+        <p className='ml-5 underline'>Menufectured by Ujjwal singh.</p>
       </div>
     </div>
   )

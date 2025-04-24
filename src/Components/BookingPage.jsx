@@ -27,7 +27,7 @@ const BookingPage = () => {
   });
   const [paymentSuccess, setPaymentSuccess] = useState(false);
 
-  // Normalize movie name (handle hyphens and casing)
+
   const normalizeMovieName = (name) => {
     if (!name) return '';
     return name
@@ -78,7 +78,7 @@ const BookingPage = () => {
     setTimeout(() => {
       alert(`Payment successful! You booked seats: ${selectedSeats.join(
           ', '
-        )} for ${movieName}. Total paid: $${totalPrice}`
+        )} for ${movieName}.  Total paid: $${totalPrice}`
       );
       navigate('/');
     }, 500);
@@ -113,9 +113,9 @@ const BookingPage = () => {
             )}
        </div>
     <p className='mb-2 font-semibold'>  Selected Seats: {selectedSeats.length}</p>{' '}
-          {/* Display selected seats count */}
+          
           <p className='mb-4 font-semibold'>Total Price: ${totalPrice}</p>{' '}
-          {/* Display total price */}
+         
           <button type='submit' className='mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700' >
             Go to Payment </button>
         </form>
